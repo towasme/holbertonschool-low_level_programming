@@ -1,5 +1,6 @@
 #include <stdio.h>
-/*first c file*/
+/**first c file
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
