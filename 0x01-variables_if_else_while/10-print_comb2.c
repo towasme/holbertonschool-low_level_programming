@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  * main -Entry point
  *
@@ -7,18 +7,16 @@
 int main(void)
 {
 int ch;
-for (ch = 00; ch <= 99 ; ch++)
+for (ch = 0; ch < 100 ; ch++)
 {
-putchar(ch);
+putchar((ch / 10) + '0');
+putchar((ch % 10) + '0');
 if (ch != 99)
 {
 putchar(',');
 putchar(' ');
 }
-else
-{
+}
 putchar('\n');
-}
-}
 return (0);
 }
