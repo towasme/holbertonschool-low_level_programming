@@ -16,6 +16,9 @@ if (ch != '9')
 putchar(',');
 putchar(' ');
 }
+else
+{
 putchar('\n');
+}
 return (0);
 }
