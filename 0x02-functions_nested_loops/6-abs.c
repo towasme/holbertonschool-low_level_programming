@@ -5,9 +5,8 @@
  *
  *Return: Always
  */
-int _abs(int)
+int _abs(int r)
 {
-int r;
 	if (r < 0)
 	{
 		r = (r * (-1));
@@ -16,5 +15,4 @@ int r;
 	{r = r;
 	}
 return (r);
-}
 }
