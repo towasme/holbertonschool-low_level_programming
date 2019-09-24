@@ -6,11 +6,15 @@
  */
 int main(void)
 {
-int i;
-char a[] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n', '\0'};
-for (i = 0; i <= 9; i++)
-{
-_putchar(a[i]);
+_putchar('H');
+_putchar('o');
+_putchar('l');
+_putchar('b');
+_putchar('e');
+_putchar('r');
+_putchar('t');
+_putchar('o');
+_putchar('n\n');
 }
 _putchar('\n');
 return (0);
