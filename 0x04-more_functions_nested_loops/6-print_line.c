@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
- *print_numbers - Prints numbers from 0 to 9
+ *print_line - Prints numbers from 0 to 9
+ *@n: var
  *
  */
 void print_line(int n)
@@ -13,9 +14,9 @@ void print_line(int n)
 			{
 			_putchar('_');
 			}
-		else
-		{
+	else
+	{
 		_putchar('\n');
-		}
+	}
 	}
 }
