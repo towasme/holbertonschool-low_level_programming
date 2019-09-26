@@ -1,18 +1,18 @@
 #include "holberton.h"
 /**
- *_islower - Checks for lowercase character
+ *_isdigit - Checks for lowercase character
  *@c: variable to be replaced
  *
  *Return: Always
  */
 int _isdigit(int c)
 {
-	if(c < 58 && c > 47)
+	if (c < 58 && c > 47)
 		{
-		return(1);
+		return (1);
 		}
 	else
 		{
-		return(0);
+		return (0);
 		}
 }
