@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
  *print_diagonal - Prints
- *@b: variable
- *@c: vari
+ *@n: variable
  */
 void print_diagonal(int n)
 {
