@@ -17,22 +17,21 @@ void print_to_98(int n)
 			printf("%d, ", n);
 			n++;
 			if(n == 98) 
-				printf("%d", n);
+				printf("%d\n", n);
 		}
 		while(n <=97);
 	}
 	else if(n > 98)
-            {
-                do 
-                {
-                n--;
-                if(n != 98)
-                { 
-                    printf("%d, ", n);
-                }
+	{
+		do
+		{
+			printf("%d, ", n);
+			n--;
+			if(n != 98)
+			printf("%d, ", n);
                 else
-                {  
-                    printf("%d", n);
+                {
+                    printf("%d\n", n);
                 }
                 }
                 while(n > 98);
