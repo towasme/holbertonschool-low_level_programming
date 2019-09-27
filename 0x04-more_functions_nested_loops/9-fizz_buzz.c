@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *print_square- Prints
- *@size: variable
+ *main- Prints
+ *
+ *Return: Always
  */
 int main(void)
 {
@@ -20,5 +21,5 @@ for (n = 1; n <= 100; n++)
 	else
 	printf("%d ", n);
 	}
-return(0);
+return (0);
 }
