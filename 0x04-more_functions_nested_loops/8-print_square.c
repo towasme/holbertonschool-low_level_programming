@@ -10,9 +10,9 @@ int c;
 
 	if (size > 0)
 	{
-		for (b = 1; b <= size; b++)
+		for (b = 0; b < size; b++)
 		{
-			for (c = 1; c <= size; c++)
+			for (c = 1; c < size; c++)
 			{
 				_putchar('#');
 			}
