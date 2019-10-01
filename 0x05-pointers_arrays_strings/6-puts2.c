@@ -6,10 +6,17 @@
  */
 void puts2(char *str)
 {
+
 int cont;
-	for (cont = 0; str[cont] != '\0'; cont += 2)
+int y = 0;
+
+	for (cont = 0; str[cont] != '\0'; cont++)
 		{
-		_putchar(str[cont]);
+		}
+		while (y < cont)
+		{
+		_putchar(str[y]);
+		y += 2;
 		}
 	_putchar('\n');
 }
