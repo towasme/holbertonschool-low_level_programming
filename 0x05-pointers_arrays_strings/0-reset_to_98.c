@@ -1,9 +1,10 @@
 #include "holberton.h"
 
  /**
- *reset_to_98- pointer to an int as parameter
  *
- *@n: variable
+ *reset_to_98 - pointer to an int as parameter
+ *
+ *@*n: variable
  *
  *Return: Always
  */

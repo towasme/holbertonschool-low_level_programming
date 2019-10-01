@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *swap_int Prints
+ *swap_int - Prints
  *
- *@*a: pointer a
+ *@a: pointer a
  *@b: pointer b
  *
  *Return: Always
