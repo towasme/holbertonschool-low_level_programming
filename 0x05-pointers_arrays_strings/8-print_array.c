@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  *print_array - reverse
  *@a: pointer string
@@ -16,4 +17,5 @@ int b = n;
 		else
 			printf("%d", a[n]);
 		}
+	printf("\n");
 }
