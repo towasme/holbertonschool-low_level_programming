@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  *puts_half - reverse
- *@s: pointer string
+ *@str: pointer string
  *Return: Always
  */
 void puts_half(char *str)
@@ -10,20 +10,19 @@ int n;
 int i;
 int x;
 
-	while (i = 0, str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
+		{
+		}
+		n = i;
+		i = i / 2;
+		if (n % 2 != 0)
 		{
 		i++;
 		}
-	if (i % 2 == 0)
+		for (x = 0; x < n; x++)
 		{
-		x = i / 2;
-		for (n = x; n < i; n++)
-			_putchar(str[n]);
-		}
-	else
-		{
-		x = ((x + 1) / 2);
+		if (x >= i)
 		_putchar(str[x]);
 		}
-	
+	_putchar('\n');
 }
