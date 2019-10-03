@@ -14,13 +14,13 @@ int u = 0;
 		{
 		for (u = 0; s2[u] != '\0'; u++)
 			{
-			if (s1[i] == s2[u])
+			if (s1[i] != s2[u])
 				{
-				return (0);
+				return (s1[i] - s2[u]);
 				}
 			else
 				{
-				return (s1[i] - s2[u]);
+				return (0);
 				}
 			}
 		}
