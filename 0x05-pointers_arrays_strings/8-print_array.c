@@ -15,12 +15,12 @@ for (n = 0; a[n + 1] != '\0'; n++)
 }
 for (b = 0; b < n; b++)
 {
-if (b == (n - 1))
+if (b != (n - 1))
 {
-printf("%d", a[b]);
+printf("%d, ", a[b]);
 }
 else
-printf("%d, ", a[b]);
+printf("%d", a[b]);
 }
 printf("\n");
 }
