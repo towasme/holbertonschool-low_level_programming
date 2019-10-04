@@ -16,7 +16,7 @@ int j;
 		}
 	for (j = 0; src[j] != '\0'; j++)
 		{
-		dest[i + j] = src[j]:
+		dest[i + j] = src[j];
 		}
 	return (dest);
 }
