@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- **_string_toupper - concatenates two strings
+ **string_toupper - concatenates two strings
  *@s: pointer string
  *Return: Always
  */
