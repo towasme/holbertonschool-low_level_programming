@@ -1,4 +1,4 @@
-IInclude "holberton.h"
+#include "holberton.h"
 /**
  **_strcat - concatenates two strings
  *@dest: pointer string
@@ -17,6 +17,6 @@ int j;
 		{
 		dest[i + j] = src[j]:
 		}
+		}
 	return (dest);
-	}
 }
