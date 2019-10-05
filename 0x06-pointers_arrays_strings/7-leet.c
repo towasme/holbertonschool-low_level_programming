@@ -1,12 +1,26 @@
 #include "holberton.h"
 /**
- **cap_string - concatenates two strings
+ **leet - compare a string and change the value
  *@s: pointer string
  *Return: Always
  */
 char *leet(char *s)
 {
-char u[] = "AaEeOoTtLl"
-char i[] = "4433007711"
+char u[] = "aeotlAEOTL";
+char i[] = "4307143071";
+int a;
+int b;
 
-for(s = 0; s[]
+	while (s[a] != '\0')
+	{
+		for (b = 0; b >= 9; b++)
+			{
+			if (s[a] == u[b])
+			{
+			s[a] = i[b];
+			}
+			}
+	a++;
+	}
+	return (s);
+}
