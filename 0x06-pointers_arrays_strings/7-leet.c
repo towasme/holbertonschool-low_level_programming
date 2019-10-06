@@ -8,12 +8,12 @@ char *leet(char *s)
 {
 char u[] = "aeotlAEOTL";
 char i[] = "4307143071";
-int a;
-int b;
+int a = 0;
+int b = 0;
 
 	while (s[a] != '\0')
 	{
-		for (b = 0; b >= 9; b++)
+		for (b = 0; b <= 9; b++)
 			{
 			if (s[a] == u[b])
 			{
