@@ -13,7 +13,6 @@ int n;
 		{
 		if (s[n] == c)
 			{
-			s = s + n;
 			return (s);
 			}
 		}
