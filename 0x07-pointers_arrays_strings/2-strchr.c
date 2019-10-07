@@ -13,8 +13,11 @@ int n;
 		{
 		if (s[n] == c)
 			{
+			s = s + n;
 			return (s);
 			}
+		else
+		{
+		return ('\0');
 		}
-	return ('\0');
 }
