@@ -17,6 +17,6 @@ int n;
 			return (s);
 			}
 		}
-	s = s + (n + 1);
+	s = 0;
 	return (s);
 }
