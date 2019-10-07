@@ -17,6 +17,5 @@ int n;
 			return (s);
 			}
 		}
-	s = 0;
-	return (s);
+	return ('\0');
 }
