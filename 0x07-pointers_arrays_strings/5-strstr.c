@@ -20,6 +20,8 @@ int c = a;
 				a++;
 				b++;
 				}
+			}
+		}
 			if (needle[b] == '\0')
 			{
 			return (haystack + c);
