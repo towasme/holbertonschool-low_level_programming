@@ -4,7 +4,7 @@
  *help - prints characters
  *@n: variable
  *@i: var 2
- *return: always
+ *Return: Always
  */
 
 int help(int n, int i)
