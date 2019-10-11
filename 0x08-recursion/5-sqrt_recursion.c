@@ -1,20 +1,28 @@
 #include "holberton.h"
 
 /**
- *sqrt_2 - prints characters
+ *help - prints characters
  *@n: variable
  *@i: var 2
  *Return: Always
  */
 
-int sqrt_2(int n, int i)
+int help(int n, int i)
 {
 
-	if (i * i != n && i > 0)
+	if (i * i == n)
 		{
-		sqrt_2(n, i + 1);
+		return (i);
 		}
-	return (i);
+	if (i < n / 2)
+		{
+		return (help(n, i + 1));
+		}
+	if (n % 2 != 0)
+		{
+		return (-1);
+		}
+	return  (1);
 }
 
 /**
@@ -24,18 +32,15 @@ int sqrt_2(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
-int i = 0;
-int e;
+int i = 1;
 
 	if (n < 0)
 		{
 		return (-1);
 		}
-	else 
+	if (n == 0)
 		{
-		e = sqrt_2(n, i);
-		return (e);
+		return (0);
 		}
-	return (e);
+	return (help(n, i));
 }
-
