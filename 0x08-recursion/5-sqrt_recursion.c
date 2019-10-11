@@ -10,20 +10,19 @@
 int help(int n, int i)
 {
 
-
 	if (i * i == n)
 		{
 		return (i);
 		}
-	if (i * i < n)
+	if (i < n / 2)
 		{
-		return (help(i + 1, n));
+		return (help(n, i + 1));
 		}
-	if ((n % 2) == 0)
+	if (n % 2 != 0)
 		{
 		return (-1);
 		}
-	return (help(i + 1, n));
+	return  (1);
 }
 
 /**
@@ -33,10 +32,15 @@ int help(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
+int i = 1;
 
+	if (n < 0)
+		{
+		return (-1);
+		}
 	if (n == 0)
 		{
 		return (0);
 		}
-	return (help(1, n));
+	return (help(n, i));
 }
