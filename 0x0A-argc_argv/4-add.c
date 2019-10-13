@@ -18,18 +18,17 @@ int i;
 		}
 	else if (argc > 0)
 		{
-		for (i = 1; i < argc; i++)
+			for (i = 1; i < argc; i++)
 			{
-			if (atoi(argv[i]) <= 47 || atoi(argv[i]) >= 58)
+			/*if (atoi(argv[i]) <= 47 || atoi(argv[i]) >= 58)
 				{
 				printf ("Error\n");
 				}
 			else
-				{
+			*/
 				sum += atoi(argv[i]);
 				}
 			printf ("%d\n", sum);
 			}
-		}
 	return (0);
 }
