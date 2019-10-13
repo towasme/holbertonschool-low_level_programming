@@ -8,10 +8,10 @@
  */
 int main(int argc, char* argv[])
 {
-int sum;
-int i;
+int sum, i, c;
+char *p;
 
-	if (argc < 1)
+	if (argc < 0)
 		{
 		printf("0/n");
 		return (0);
@@ -20,15 +20,18 @@ int i;
 		{
 			for (i = 1; i < argc; i++)
 			{
-			/*if (atoi(argv[i]) <= 47 || atoi(argv[i]) >= 58)
+			p = argv[i];
+				for (c = 0; p[c]; c++)
 				{
-				printf ("Error\n");
+					if (p[c] <= 47 || p[c] >= 58)
+					{
+					printf ("Error\n");
+					return (1);
+					}
 				}
-			else
-			*/
 				sum += atoi(argv[i]);
-				}
-			printf ("%d\n", sum);
 			}
+		printf ("%d\n", sum);
+		}
 	return (0);
 }
