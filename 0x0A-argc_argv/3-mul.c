@@ -12,7 +12,7 @@ int mul;
 int num1;
 int num2;
 
-	if (argc > 1)
+	if (argc > 2)
 		{
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[2]);
