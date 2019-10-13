@@ -6,8 +6,10 @@
  *@argv: pointer destination
  *Return: Always
  */
-int main(int argc, char* argv[])
+
+int main(int argc, char *argv[])
 {
+
 int sum, i, c;
 char *p;
 
@@ -18,20 +20,20 @@ char *p;
 		}
 	else if (argc > 0)
 		{
-			for (i = 1; i < argc; i++)
+		for (i = 1; i < argc; i++)
 			{
 			p = argv[i];
-				for (c = 0; p[c]; c++)
+			for (c = 0; p[c]; c++)
 				{
-					if (p[c] <= 47 || p[c] >= 58)
+				if (p[c] <= 47 || p[c] >= 58)
 					{
-					printf ("Error\n");
+					printf("Error\n");
 					return (1);
 					}
 				}
-				sum += atoi(argv[i]);
+			sum += atoi(argv[i]);
 			}
-		printf ("%d\n", sum);
+		printf("%d\n", sum);
 		}
 	return (0);
 }
