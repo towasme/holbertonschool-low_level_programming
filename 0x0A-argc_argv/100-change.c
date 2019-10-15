@@ -18,7 +18,7 @@ int sum;
 		printf("Error\n");
 		return (1);
 		}
-	else 
+	else
 		{
 		sum = atoi(argv[1]);
 		while (sum >= 25)
