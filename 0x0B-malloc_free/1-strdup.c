@@ -18,7 +18,7 @@ int i, b;
 		{
 		return (NULL);
 		}
-	for (b = 0; b <= i; b++)
+	for (b = 0; b <= i - 1; b++)
 		{
 		new[b] = str[b];
 		}
