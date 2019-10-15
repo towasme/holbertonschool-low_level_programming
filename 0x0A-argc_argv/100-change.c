@@ -10,35 +10,43 @@
 int main(int argc, char *argv[])
 {
 
-int sum, i, c;
-char *p;
+int cents = 0;
+int sum;
 
-	if (argc < 0)
-		{
-		printf("0/n");
-		return (0);
-		}
-	else if (argc != 1)
+	if (argc != 2)
 		{
 		printf("Error\n");
 		return (1);
 		}
 	else 
 		{
-		for (i = 1; i < argc; i++)
+		sum = atoi(argv[1]);
+		while (sum >= 25)
 			{
-			p = argv[i];
-			for (c = 0; p[c]; c++)
-				{
-				if (p[c] <= 47 || p[c] >= 58)
-					{
-					printf("Error\n");
-					return (1);
-					}
-				}
-			sum += atoi(argv[i]);
+			sum -= 25;
+			cents++;
 			}
-		printf("%d\n", sum);
+		while (sum >= 10)
+			{
+			sum -= 10;
+			cents++;
+			}
+		while (sum >= 5)
+			{
+			sum -= 5;
+			cents++;
+			}
+		while (sum >= 2)
+			{
+			sum -= 2;
+			cents++;
+			}
+		while (sum >= 1)
+			{
+			sum -= 1;
+			cents++;
+			}
 		}
+		printf("%d\n", cents);
 	return (0);
-
+}
