@@ -12,12 +12,8 @@ char *new = NULL;
 int i, b;
 	for (i = 0; str[i] != '\0'; i++)
 		{
-		/*if (i == NULL)
-			{
-			return (NULL);
-			};*/
 		}
-	new = malloc(i * sizeof(char));
+	new = malloc((i + 1) * sizeof(char));
 	if (new == NULL)
 		{
 		return (NULL);
