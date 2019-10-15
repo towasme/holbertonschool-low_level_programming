@@ -13,7 +13,7 @@ char *new = NULL;
 int i, a, b, e, d;
 	if (s1 == NULL || s2 == NULL)
 		{
-		return (NULL);
+		return (new);
 		}
 	for (i = 0; s1[i] != '\0'; i++)
 		{
