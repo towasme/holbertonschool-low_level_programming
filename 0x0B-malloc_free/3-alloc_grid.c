@@ -26,7 +26,7 @@ int **p = NULL;
 		p[i] = malloc(sizeof(int) * width);
 		if (p[i] == NULL)
 		{
-			for (a = 0; a <= i; a++)
+			for (a = 0; a <= width; a++)
 			{
 				free(p[a]);
 				free(p);
