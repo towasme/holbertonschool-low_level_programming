@@ -13,7 +13,9 @@ int i, a;
 int **p = NULL;
 
 	if (width <= 0 || height <= 0)
+	{
 		return (NULL);
+	}
 	p = malloc((height * width) * sizeof(int));
 	if (p == NULL)
 	{
