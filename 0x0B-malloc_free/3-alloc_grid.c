@@ -26,12 +26,12 @@ int **p = NULL;
 		p[i] = malloc(sizeof(int) * width);
 		if (p[i] == NULL)
 		{
-			for (a = 0; a <= width; a++)
+			for (a = 0; a < i; a++)
 			{
 				free(p[a]);
-				free(p);
-				return (NULL);
 			}
+			free(p);
+			return (NULL);
 		}
 	}
 	return (p);
