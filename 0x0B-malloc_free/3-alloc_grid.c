@@ -16,7 +16,7 @@ int **p = NULL;
 	{
 		return (NULL);
 	}
-	p = malloc((height * width) * sizeof(int));
+	p = malloc(height * sizeof(int));
 	if (p == NULL)
 	{
 		return (NULL);
@@ -26,7 +26,7 @@ int **p = NULL;
 		p[i] = malloc(sizeof(int) * width);
 		if (p[i] == NULL)
 		{
-			for (a = 0; a < i; a++)
+			for (a = 0; a < width; a++)
 			{
 				free(p[a]);
 			}
@@ -34,5 +34,12 @@ int **p = NULL;
 			return (NULL);
 		}
 	}
+		for (i = 0; i < height; i++)
+		{
+			for (a = 0; a < width; a++)
+			{
+				p[i][a] = 0;
+			}
+		}
 	return (p);
 }
