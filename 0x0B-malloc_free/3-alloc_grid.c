@@ -16,7 +16,7 @@ int **p = NULL;
 	{
 		return (NULL);
 	}
-	p = malloc(height * sizeof(int));
+	p = malloc(height * sizeof(int *));
 	if (p == NULL)
 	{
 		return (NULL);
