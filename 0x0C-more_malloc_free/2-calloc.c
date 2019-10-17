@@ -9,21 +9,18 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int i = 0;
-int t = 0;
+unsigned int i = 0;
 char *new;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	t = nmemb * size;
-
-	new = malloc(t);
+	new = malloc(size * nmemb);
 
 	if (new == NULL)
 		new = NULL;
 
-	while (i < t)
+	while (i < (size * nmemb))
 	{
 		new[i] = 0;
 		i++;
