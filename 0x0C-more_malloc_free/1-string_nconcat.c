@@ -5,29 +5,28 @@
  **string_nconcat- creates an array
  *@s1: positive integer
  *@s1: var typ char
+ *@s2: var type
  *@n: size in bytes
  *Return: Always
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int i = 0;
-unsigned int a = 0;
-int b = 0;
-unsigned int d = 0;
+int i = 0, b = 0;
+unsigned int a = 0, d = 0;
 char *new;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
-
+	}
 	if (s2 == NULL)
-		 s2 = "";
-
+		s2 = "";
 	while (s1[i])
 		i++;
-
 	while (s2[a])
+	{
 		a++;
-
+	}
 	if (n >= a)
 		{
 		n = a;
