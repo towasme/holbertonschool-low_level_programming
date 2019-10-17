@@ -25,7 +25,7 @@ char *p;
 		}
 		a = 0;
 	}
-	p = malloc(cont * sizeof(char *) + ac + 1);
+	p = malloc(cont * sizeof(char) + ac + 1);
 	if (p == NULL)
 	{
 		return (NULL);
