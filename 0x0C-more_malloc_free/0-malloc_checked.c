@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 /**
  *malloc_checked - creates an array
  *@b: positive integer
@@ -9,10 +8,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-int *c = NULL;
+unsigned int *c = NULL;
 
 	c = malloc(b);
-	if (c == NULL || c == INT_MAX)
+	if (c == NULL)
 	{
 		exit(98);
 	}
