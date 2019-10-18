@@ -18,22 +18,28 @@ int *str;
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
-		return(NULL);
+		return (NULL);
+	}
+	if (ptr == NULL)
+	{
+		str = malloc(new_size);
+		if (str == NULL)
+		{
+		return (NULL);
+		}
+	return (str);
 	}
 	if (new_size > old_size)
-		return (ptr);
-	else
-		str = malloc(new_size + 1);
-	if (str == NULL)
-		return NULL;
-
-	if (ptr == NULL)
-		return (str);
-
-	for (y = 0; y < new_size; y++)
 	{
-		str[y] = ((char *)ptr)[y];
-		free(ptr);
+		str = malloc(new_size + 1);
+		if (str == NULL)
+		{
+			return (NULL);
+		}
+		for (y = 0; y < old_size; y++)
+		{
+			str[y] = ((char *)ptr)[y];
+		}
 	}
-return (str);
+		return (str);
 }
