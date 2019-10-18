@@ -16,9 +16,8 @@ char *new;
 		return (NULL);
 
 	new = malloc(size * nmemb);
-
 	if (new == NULL)
-		new = NULL;
+		return (NULL);
 
 	for (i = 0; i < (size * nmemb); i++)
 	{
