@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- **_calloc - name of the function
+ *_calloc - name of the function
  *@nmemb: positive integer
  *@size: var typ char
  *Return: Always
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int i = 0;
+unsigned int i;
 char *new;
 
 	if (nmemb == 0 || size == 0)
@@ -20,10 +20,9 @@ char *new;
 	if (new == NULL)
 		new = NULL;
 
-	while (i < (size * nmemb))
+	for (i = 0; i < (size * nmemb); i++)
 	{
 		new[i] = 0;
-		i++;
 	}
 	return (new);
 }
