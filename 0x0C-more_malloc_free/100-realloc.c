@@ -36,6 +36,6 @@ char *str;
 			str[y] = ((char *)ptr)[y];
 		}
 	}
-	free(prt);
+	free(ptr);
 	return (str);
 }
