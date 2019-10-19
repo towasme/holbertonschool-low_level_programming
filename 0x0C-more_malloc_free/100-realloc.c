@@ -33,7 +33,9 @@ char *str;
 	if (new_size > old_size)
 	{
 		for (y = 0; y < old_size; y++)
+		{
 			str[y] = ((char *)ptr)[y];
+		}
 	}
 	free(prt);
 	return (str);
