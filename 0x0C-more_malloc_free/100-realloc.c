@@ -25,11 +25,11 @@ char *str;
         str = malloc(new_size);
 	if (str == NULL)
 		{
-		return (NULL);
+		return (ptr);
 		}
 	
 	if (ptr == NULL)
-		return (str);
+		return (malloc(new_size));
 
 	if (new_size > old_size)
 	{
