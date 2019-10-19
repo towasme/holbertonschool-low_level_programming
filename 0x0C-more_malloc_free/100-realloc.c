@@ -1,4 +1,4 @@
-#include "holberton.h"
+o#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -21,15 +21,14 @@ char *str;
 		free(ptr);
 		return (NULL);
 	}
-	
-        str = malloc(new_size);
+	str = malloc(new_size);
 	if (str == NULL)
 		{
-		return (ptr);
+		return (NULL);
 		}
 	
 	if (ptr == NULL)
-		return (malloc(new_size));
+		return (str);
 
 	if (new_size > old_size)
 	{
