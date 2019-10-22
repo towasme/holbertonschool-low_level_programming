@@ -1,17 +1,41 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- *init_dog - creates an array
- *@name: var typ char
- *@age: var
- *@owner: var
- *@d: var
+ *print_dog - creates an array
+ *@d: pointer
  *Return: Always
  */
 void print_dog(struct dog *d)
 
 {
-		d->name = name;
-			d->age = age;
-				d->owner = owner;
+	if (d == NULL)
+	{
+	}
+	else
+	{
+		if (d->owner == NULL)
+		{
+			printf("owner: (nil)\n");
+		}
+		else
+		printf("Owner: %s\n", d->owner);
+
+		if (d->age < 0)
+		{
+			printf("Age: (nil)\n");
+		}
+		else
+		{
+			printf("Age: %.2f\n", d->age);
+		}
+
+		if (d->name == NULL)
+		{
+			printf("Name: (nil)\n");
+		}
+		else
+		{
+			printf("Name: %s\n", d->name);
+		}
+	}
 }
