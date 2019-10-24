@@ -1,23 +1,27 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 /**
- *array_iterator - creates an array
+ *int_index - creates an array
  *@array: pointer
  *@size: function pointer
- *@action: function pointer
+ *@cmp: function pointer
  *Return: Always
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i = 0;
+	int i = 0;
 
-	if ((array) == NULL || (size == 0) || ((*action) == NULL))
+	if (array == NULL || (size <= 0) || ((*cmp) == NULL))
 	{
-		return;
+		return (-1);
 	}
 	while (i < size)
 	{
-		(*action)(array[i]);
+		if (cmp(array[i]))
+		{
+			return (i);
+		}
 		i++;
 	}
+	return (-1);
 }
