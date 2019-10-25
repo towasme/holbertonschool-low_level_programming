@@ -4,8 +4,8 @@
 
 /**
  *op_add - function that adds two numbers
- *@a - var int type
- *@b
+ *@a: var int type
+ *@b: var
  *Return: Always
  */
 
@@ -15,8 +15,9 @@ int op_add(int a, int b)
 }
 
 /**
- *op_sub - func that subtracts
- *@a: var int
+ *op_sub - function that adds two numbers
+ *@a: var int type
+ *@b: var
  *Return: Always
  */
 
@@ -26,10 +27,9 @@ int op_sub(int a, int b)
 }
 
 /**
- *int_index - creates an array
- *@array: pointer
- *@size: function pointer
- *@cmp: function pointer
+ *op_mul - function that adds two numbers
+ *@a: var int type
+ *@b: var
  *Return: Always
  */
 
@@ -39,10 +39,9 @@ int op_mul(int a, int b)
 }
 
 /**
- *int_index - creates an array
- *@array: pointer
- *@size: function pointer
- *@cmp: function pointer
+ *op_div - function that adds two numbers
+ *@a: var int type
+ *@b: var
  *Return: Always
  */
 
@@ -52,10 +51,9 @@ int op_div(int a, int b)
 }
 
 /**
- *int_index - creates an array
- *@array: pointer
- *@size: function pointer
- *@cmp: function pointer
+ *op_mod - function that adds two numbers
+ *@a: var int type
+ *@b: var
  *Return: Always
  */
 
