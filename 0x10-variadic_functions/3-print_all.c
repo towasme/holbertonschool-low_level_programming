@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 			printf("%c", va_arg(lst, int));
 			break;
 			case 'i':
-			printf("%i", va_arg(lst, int));
+			printf("%d", va_arg(lst, int));
 			break;
 			case 'd':
 			printf("%f", (float)(va_arg(lst, double)));
@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 		}
 		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' ||
 format[i] == 'd' || format[i] == 's'))
-				printf(", ");
+			printf(", ");
 
 		i++;
 	}
