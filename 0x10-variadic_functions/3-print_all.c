@@ -14,12 +14,8 @@ void print_all(const char * const format, ...)
 	char *prt = NULL;
 
 	va_start(lst, format);
-	if (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
-	while (format[i] != '\0')
+
+	while (format[i] != '\0' && format == NULL)
 	{
 		switch (format[i])
 		{
@@ -36,11 +32,9 @@ void print_all(const char * const format, ...)
 				prt = va_arg(lst, char*);
 				if (prt == NULL)
 				{
-					prt = ("(nil)");
+					prt = "(nil)";
 				}
 				printf("%s", prt);
-				break;
-			default:
 				break;
 		}
 		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'f' ||
