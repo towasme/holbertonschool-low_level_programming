@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 			case 'i':
 				printf("%d", va_arg(lst, int));
 				break;
-			case 'd':
+			case 'f':
 				printf("%f", va_arg(lst, double));
 				break;
 			case 's':
@@ -40,8 +40,9 @@ void print_all(const char * const format, ...)
 		}
 		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'f' ||
 format[i] == 'd' || format[i] == 's'))
+		{
 			printf(", ");
-
+		}
 		i++;
 	}
 	printf("\n");
