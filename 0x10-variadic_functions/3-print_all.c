@@ -14,6 +14,11 @@ void print_all(const char * const format, ...)
 	char *prt = NULL;
 
 	va_start(lst, format);
+	if (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
 	while (format[i] != '\0')
 	{
 		switch (format[i])
@@ -45,6 +50,6 @@ format[i] == 'd' || format[i] == 's'))
 		}
 		i++;
 	}
-	printf("\n");
 	va_end(lst);
+	printf("\n");
 }
