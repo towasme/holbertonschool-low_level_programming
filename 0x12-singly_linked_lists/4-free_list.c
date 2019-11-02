@@ -4,9 +4,8 @@
 #include <string.h>
 
 /**
-**add_node - adds a new node to thelist
+*free_list - adds a new node to thelist
 *@head: list name
-*@str: string to add
 *Return: On success 1.
 */
 
