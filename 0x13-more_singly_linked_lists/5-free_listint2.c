@@ -4,19 +4,19 @@
 #include <stdlib.h>
 
 /**
-*free_listint - adds a new node to thelist
+*free_listint2 - adds a new node to thelist
 *@head: list name
 *Return: On success 1.
 */
 
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 
-	while (head != NULL)
+	while (*head != NULL)
 	{
-		temp = head;
-		head = temp->next;
+		temp = *head;
+		*head = (*head)->next;
 		free(temp);
 	}
 }
