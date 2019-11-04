@@ -4,18 +4,21 @@
 #include <string.h>
 
 /**
-**add_node - adds a new node to thelist
+*free_list - adds a new node to thelist
 *@head: list name
-*@str: string to add
 *Return: On success 1.
 */
 
 void free_list(list_t *head)
 {
+	list_t *temp;
 
 	while (head != NULL)
 	{
+		temp = head;
 		free(head->str);
 		free(head);
+		temp = temp->next;
+		head = temp;
 	}
 }
