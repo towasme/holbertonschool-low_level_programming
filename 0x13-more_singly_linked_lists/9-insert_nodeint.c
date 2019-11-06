@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-*insert_node_at_index - adds a new node to thelist
+*insert_nodeint_at_index - adds a new node to thelist
 *@head: list name
 *@idx: number
 *@n: number
@@ -13,8 +13,8 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new;
-	int i = 1;
+	listint_t *new, *aux;
+	unsigned int i = 1;
 
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
@@ -26,10 +26,19 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		new->next = *head;
 		*head = new;
+		return (new);
 	}
 	else if (*head == NULL)
 	{
 		return (NULL);
 	}
-	new = *head;
-		while (
+	aux = *head;
+	while (i != idx)
+	{
+		i++;
+		aux = aux->next;
+	}
+	new->next = aux->next;
+	aux->next = new;
+	return (new);
+}
