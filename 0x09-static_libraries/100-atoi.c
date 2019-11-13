@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- **_strcat - concatenates two strings
- *@dest: pointer string
- *@src: pointer destination
- *Return: Always
+ **_atoi - concatenates two strings
+ *@s: pointer string
+  *Return: Always
  */
-int _atoi(char *s);
+int _atoi(char *s)
+{
+}

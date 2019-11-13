@@ -10,9 +10,9 @@ int c;
 
 	if (n > 0)
 	{
-		for (b = 1; b <= n; b++)
+		for (b = 0; b <= n; ++b)
 		{
-			for (c = 2; c <= b; c++)
+			for (c = 0; c <= b; ++c)
 			{
 				_putchar(' ');
 			}
