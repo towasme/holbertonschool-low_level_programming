@@ -7,9 +7,9 @@
 #include <unistd.h>
 
 /**
- *create_file - program that reads a file
- *@filename: The character to print
- *@text_content: number of letters it prints
+ *main - program that reads a file
+ *@ac: number of arguments
+ *@av: argumnets
  *Return: On success 1.
  */
 
@@ -20,22 +20,16 @@ int main(int ac, char *av[])
 	size_t n_b;
 
 	if (ac != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
+	{dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97); }
 	fd = open(av[1], O_RDONLY);
 	if (fd == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
-		exit(98);
-	}
+	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		exit(98); }
 	fa = open(av[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
 	if (fa == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		exit(99);
-	}
+	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		exit(99); }
 	while ((n_b = read(fd, buff, 1024)) > 0)
 	{
 		fb = write(fa, buff, n_b);
@@ -44,19 +38,20 @@ int main(int ac, char *av[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
+		close (fb);
 	}
-	close(fd);
 	if (fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	close(fa);
 	if (fa == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fa);
 		exit(100);
 	}
+close(fd);
+close(fa);
 	return (0);
 }
 
