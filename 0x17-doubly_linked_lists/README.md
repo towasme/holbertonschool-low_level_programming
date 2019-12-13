@@ -1,13 +1,15 @@
 ## 0x17. C - Doubly linked lists
 ---
 # Tasks
----
+--
+File Name|Task Name|Task Description
+---|---|----
 0. Tread lightly, she is near
 1. Under the snow
 2. Speak gently, she can hear
 3. cp
 4. elf
----
+|
 
 # Description
 
