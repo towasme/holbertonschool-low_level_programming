@@ -13,11 +13,7 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	size_t counter = 0;
 
-	if (h->n == '\0')
-	{
-		return (0);
-	}
-	else if (h->next == NULL)
+	if (h->next == NULL)
 	{
 		while (h)
 		{
