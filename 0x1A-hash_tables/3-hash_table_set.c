@@ -25,10 +25,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if ((ht->array[idx] != NULL) &&
 		(strcmp(new_node->key, (char *)ht->array[idx]->key) == 0))
 		{
-			free(ht->array[idx]->value);
-			ht->array[idx]->value = new_node->value;
-			return (1);
-	}
+		free(ht->array[idx]->value);
+		ht->array[idx]->value = new_node->value;
+		return (1);
+		}
 	new_node->next = ht->array[idx];
 	ht->array[idx] = new_node;
 	return (1);
