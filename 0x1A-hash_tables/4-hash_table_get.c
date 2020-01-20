@@ -15,12 +15,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (key == NULL || ht == NULL)
 		return (NULL);
 	idx = key_index((unsigned char *)key, ht->size);
-	if (ht->array[idx] != NULL)
+	while (ht->array[idx] != NULL)
 	{
-		return (ht->array[idx]->value);
+		if (strcmp(key, ht->array[idx]->key) == 0)
+			return (ht->array[idx]->value);
+		ht->array[idx] = ht->array[idx]->next;
 	}
-	else
-	{
-		return (NULL);
-	}
+	return (NULL);
 }
