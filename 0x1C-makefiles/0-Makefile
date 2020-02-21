@@ -1,0 +1,4 @@
+# Makefile for shell.c
+
+all: holberton.c main.c
+	gcc holberton.c main.c -o holberton
