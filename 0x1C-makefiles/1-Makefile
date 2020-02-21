@@ -1,0 +1,6 @@
+#Create a makefile
+CC = gcc
+SRC = holberton.c main.c
+
+all: $(SRC)
+	$(CC) $(SRC) -o holberton
